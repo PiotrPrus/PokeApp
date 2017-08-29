@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pokemon_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        android:visibility="gone"
+        tools:context="com.example.prusp.masterdetailtest.detail.DetailActivity">
+
+        <TextView
+            android:id="@+id/pokemon_height_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="data loading"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/pokemon_weight_text_view"
+            app:layout_constraintTop_toTopOf="@+id/weight_key_text" />
+
+        <TextView
+            android:id="@+id/pokemon_weight_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1435g"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/poke_back_image_view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/pokemon_base_exp_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 000 EXP"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/pokemon_height_text_view"
+            app:layout_constraintTop_toTopOf="@+id/base_exp_key_text" />
+
+        <TextView
+            android:id="@+id/pokemon_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Bulbazur"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintLeft_toRightOf="@+id/base_exp_key_text"
+            app:layout_constraintRight_toLeftOf="@+id/pokemon_height_text_view"
+            app:layout_constraintTop_toTopOf="@+id/height_key_text" />
+
+
+        <ImageView
+            android:id="@+id/poke_front_image_view"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:elevation="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/poke_back_image_view"
+            app:layout_constraintTop_toTopOf="@+id/poke_back_image_view"
+            app:srcCompat="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/poke_back_image_view"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:elevation="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/poke_front_image_view"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nickname_edit_text"
+            app:srcCompat="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/height_key_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="height"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintLeft_toLeftOf="@+id/poke_front_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/poke_front_image_view" />
+
+        <TextView
+            android:id="@+id/weight_key_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="weight"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintLeft_toLeftOf="@+id/height_key_text"
+            app:layout_constraintTop_toBottomOf="@+id/height_key_text" />
+
+        <TextView
+            android:id="@+id/base_exp_key_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="base exp."
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintLeft_toLeftOf="@+id/weight_key_text"
+            app:layout_constraintTop_toBottomOf="@+id/weight_key_text" />
+
+        <EditText
+            android:id="@+id/nickname_edit_text"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="nickname"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@+id/pokemon_name_text_view"
+            app:layout_constraintRight_toRightOf="@+id/pokemon_name_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/pokemon_name_text_view" />
+
+        <TextView
+            android:id="@+id/pokemon_types_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Pokemon types: "
+            app:layout_constraintLeft_toLeftOf="@+id/base_exp_key_text"
+            app:layout_constraintTop_toBottomOf="@+id/base_exp_key_text" />
+
+        <Button
+            android:id="@+id/type_one_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@+id/pokemon_types_text_view"
+            app:layout_constraintTop_toTopOf="@+id/type_2_button" />
+
+        <Button
+            android:id="@+id/type_2_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toRightOf="@+id/type_one_button"
+            app:layout_constraintTop_toBottomOf="@+id/pokemon_types_text_view" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="94dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="place your notes"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:nestedScrollingEnabled="true"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type_one_button" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/detail_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <include layout="@layout/error_text" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Poke App for OKE</string>
+    <string name="title_pokemon_detail">Pokemon Detail</string>
+    <string name="half_dmg_from">half dmg from</string>
+    <string name="no_dmg_from">no dmg from</string>
+    <string name="half_dmg_to">half dmg to</string>
+    <string name="double_dmg_from">double dmg from</string>
+    <string name="no_dmg_to">no dmg to</string>
+    <string name="double_dmg_to">double dmg to</string>
+    <string name="no_data">no data...</string>
+    <string name="error_loading_data">Error loading data...</string>
+</resources>

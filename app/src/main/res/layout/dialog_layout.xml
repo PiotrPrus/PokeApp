@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/half_dmg_from_key"
+        style="@style/TextViewKeyInDialog"
+        android:text="@string/half_dmg_from"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/no_dmg_from_key"
+        style="@style/TextViewKeyInDialog"
+        android:text="@string/no_dmg_from"
+        app:layout_constraintLeft_toLeftOf="@+id/half_dmg_from_value"
+        app:layout_constraintTop_toBottomOf="@+id/half_dmg_from_value" />
+
+    <TextView
+        android:id="@+id/half_dmg_to_key"
+        style="@style/TextViewKeyInDialog"
+        android:text="@string/half_dmg_to"
+        app:layout_constraintLeft_toLeftOf="@+id/no_dmg_from_value"
+        app:layout_constraintTop_toBottomOf="@+id/no_dmg_from_value" />
+
+    <TextView
+        android:id="@+id/double_dmg_from_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/double_dmg_from"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/half_dmg_to_value"
+        app:layout_constraintLeft_toLeftOf="@+id/half_dmg_to_value" />
+
+    <TextView
+        android:id="@+id/no_dmg_to_key"
+        style="@style/TextViewKeyInDialog"
+        android:text="@string/no_dmg_to"
+        app:layout_constraintLeft_toLeftOf="@+id/double_dmg_from_value"
+        app:layout_constraintTop_toBottomOf="@+id/double_dmg_from_value" />
+
+    <TextView
+        android:id="@+id/duble_dmg_to_key"
+        style="@style/TextViewKeyInDialog"
+        android:text="@string/double_dmg_to"
+        app:layout_constraintLeft_toLeftOf="@+id/no_dmg_to_value"
+        app:layout_constraintTop_toBottomOf="@+id/no_dmg_to_value" />
+
+    <TextView
+        android:id="@+id/half_dmg_from_value"
+        style="@style/TextViewValueInDialog"
+        android:text="@string/no_data"
+        app:layout_constraintTop_toBottomOf="@+id/half_dmg_from_key"
+        app:layout_constraintLeft_toLeftOf="@+id/half_dmg_from_key" />
+
+    <TextView
+        android:id="@+id/no_dmg_from_value"
+        style="@style/TextViewValueInDialog"
+        android:text="@string/no_data"
+        app:layout_constraintTop_toBottomOf="@+id/no_dmg_from_key"
+        app:layout_constraintLeft_toLeftOf="@+id/no_dmg_from_key" />
+
+    <TextView
+        android:id="@+id/half_dmg_to_value"
+        style="@style/TextViewValueInDialog"
+        android:text="@string/no_data"
+        app:layout_constraintTop_toBottomOf="@+id/half_dmg_to_key"
+        app:layout_constraintLeft_toLeftOf="@+id/half_dmg_to_key" />
+
+    <TextView
+        android:id="@+id/double_dmg_from_value"
+        style="@style/TextViewValueInDialog"
+        android:text="@string/no_data"
+        app:layout_constraintTop_toBottomOf="@+id/double_dmg_from_key"
+        app:layout_constraintLeft_toLeftOf="@+id/double_dmg_from_key" />
+
+    <TextView
+        android:id="@+id/no_dmg_to_value"
+        style="@style/TextViewValueInDialog"
+        android:text="@string/no_data"
+        app:layout_constraintTop_toBottomOf="@+id/no_dmg_to_key"
+        app:layout_constraintLeft_toLeftOf="@+id/no_dmg_to_key" />
+
+    <TextView
+        android:id="@+id/double_dmg_to_value"
+        style="@style/TextViewValueInDialog"
+        android:text="@string/no_data"
+        app:layout_constraintLeft_toLeftOf="@+id/duble_dmg_to_key"
+        app:layout_constraintTop_toBottomOf="@+id/duble_dmg_to_key" />
+</android.support.constraint.ConstraintLayout>
