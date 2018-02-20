@@ -19,4 +19,4 @@ App uses API from http://pokeapi.co/
 - additional info about types is displayed in dialog window
 
 # Screenshot
-<img src="https://raw.githubusercontent.com/PiotrPrus/PokeApp/master/app/src/main/res/drawable/Screenshot_pokeApp.png" width="600">
+<img src="https://raw.githubusercontent.com/PiotrPrus/PokeApp/master/app/src/main/res/drawable/screenshot_pokeapp.png" width="600">
